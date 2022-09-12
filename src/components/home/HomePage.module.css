@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    background-color: #0e0030;
+    color: white;
+    position:fixed;
+    z-index: 1;
+}
+
+.top{
+    color: #c2601a;
+    margin: 0 0 0 23%;
+    margin-top: 10%;
+    font-size: 1.2vw;
+}
+
+.mid {
+    color: white;
+    margin: 0 0 0 23%;
+    font-size: 5vw;
+    padding: 0;
+    border: none;
+}
+
+.bot {
+    color: white;
+    margin: 0 0 0 23%;
+    font-size: 4vw;
+
+}
+
+.desc {
+    color: white;
+    margin: 7px 0 0 23%;
+    font-size: 1.3vw;
+}
+
+.button {
+    display: block;
+    width: fit-content;
+    height: auto;
+    background-color: #c2601a;
+    margin: 30px 0 15% 23%;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.button a {
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.button :hover {
+    cursor: pointer;
+    color: #0e0030;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+}
