@@ -11,8 +11,8 @@
     align-items: center;
     padding: 0 35px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    z-index: 10;
-    overflow: hidden;
+    z-index: 100;
+
 }
 
 .container img {
@@ -23,7 +23,7 @@
     display: block;
     position: relative;
     width: 100%;
-    margin-right: 50px;
+    margin-right: 5%;
 }
 
 .list li {
@@ -48,15 +48,56 @@
     cursor: pointer;
 }
 
-.mobile {
-    overflow: hidden;
-    display: block;
-    position: relative;
-    
-}
-
 .hamburger {
-    overflow: hidden;
+    display: none;
 }
 
+@media screen and (min-width: 600px) {
+    .mobile {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+
+    }
+
+    .mobile {
+        display: block;
+        position: relative;
+    }
+
+    .mobile a {
+        color: white;
+    }
+
+    .mobile li {
+        margin-left: 25px;
+        margin-top: 4px;
+        font-size: 4vw;
+        float: left;
+    }
+
+    .hamburger svg {
+        margin: 0 20rem 0 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo {
+        display: none;
+    }
+}
