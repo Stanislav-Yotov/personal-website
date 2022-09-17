@@ -11,6 +11,9 @@ function AboutPage(props) {
                 I am curious in terms of technology and every day is a challenge to learn something new,
                 and become a better version of myself.
             </div>
+            <div className={styles.stackTitle}>
+                My tech stack is:
+            </div>
         </div>
     );
 }

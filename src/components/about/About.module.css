@@ -12,25 +12,27 @@
 }
 
 .greet {
-    /* display: flex;
-    flex-direction: column; */
     width: 50%;
-    margin-top: 10%;
+    margin-top: 7%;
     font-size: 1.7vw;
     margin-left: 20%;
 }
 
 .introduce {
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: right; */
     font-size: 1.5vw;
     width: 50%;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-right: 20%;
 }
 
-.social {
+.stackTitle {
+    display: block;
+    font-size: 1.5vw;
+    width: 50%;
+    
+}
+
+/* .social {
     position: fixed;
     background-color: white;
     height: 100vh;
@@ -55,4 +57,4 @@
 
 .social svg {
     width: 20px;
-}
+} */
