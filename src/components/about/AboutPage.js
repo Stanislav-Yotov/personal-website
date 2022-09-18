@@ -1,5 +1,5 @@
 import styles from './About.module.css';
-import { FaFacebook, FaLinkedin, FaGithub} from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function AboutPage(props) {
     return (
@@ -15,9 +15,9 @@ function AboutPage(props) {
             <div className={styles.social}>
                 <p>You can find me on:</p>
                 <ul>
-                    <li><a href='https://www.facebook.com/stanislav.iotov/' target='_blank' rel="noopener noreferrer"><FaFacebook /></a></li>
-                    <li><a href='https://github.com/Stanislav-Yotov' target='_blank' rel="noopener noreferrer"><FaGithub /></a></li>
-                    <li><a href='https://www.linkedin.com/in/stanislav-yotov-72a602244/' target='_blank' rel="noopener noreferrer"><FaLinkedin /></a></li>
+                        <li className={styles.fb}><a href='https://www.facebook.com/stanislav.iotov/' target='_blank' rel="noopener noreferrer"><FaFacebook /></a></li>
+                        <li className={styles.git}><a href='https://github.com/Stanislav-Yotov' target='_blank' rel="noopener noreferrer"><FaGithub /></a></li>
+                        <li className={styles.linkedin}><a href='https://www.linkedin.com/in/stanislav-yotov-72a602244/' target='_blank' rel="noopener noreferrer"><FaLinkedin /></a></li>
                 </ul>
             </div>
         </div>
