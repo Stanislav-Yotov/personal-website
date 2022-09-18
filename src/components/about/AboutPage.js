@@ -1,4 +1,5 @@
 import styles from './About.module.css';
+import { FaFacebook, FaLinkedin, FaGithub} from 'react-icons/fa';
 
 function AboutPage(props) {
     return (
@@ -11,8 +12,13 @@ function AboutPage(props) {
                 I am curious in terms of technology and every day is a challenge to learn something new,
                 and become a better version of myself.
             </div>
-            <div className={styles.stackTitle}>
-                My tech stack is:
+            <div className={styles.social}>
+                <p>You can find me on:</p>
+                <ul>
+                    <li><a href='https://www.facebook.com/stanislav.iotov/' target='_blank' rel="noopener noreferrer"><FaFacebook /></a></li>
+                    <li><a href='https://github.com/Stanislav-Yotov' target='_blank' rel="noopener noreferrer"><FaGithub /></a></li>
+                    <li><a href='https://www.linkedin.com/in/stanislav-yotov-72a602244/' target='_blank' rel="noopener noreferrer"><FaLinkedin /></a></li>
+                </ul>
             </div>
         </div>
     );

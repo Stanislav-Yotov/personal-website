@@ -7,11 +7,12 @@
     margin-top: 80px;
     background-color: #0e0030;
     color: white;
-    position:fixed;
     z-index: 1;
 }
 
 .greet {
+    display: inline;
+    position: relative;
     width: 50%;
     margin-top: 7%;
     font-size: 1.7vw;
@@ -19,17 +20,32 @@
 }
 
 .introduce {
+    position: relative;
     font-size: 1.5vw;
     width: 50%;
     margin-top: 7%;
     margin-right: 20%;
 }
 
-.stackTitle {
-    display: block;
+.social {
+    position: absolute;
+    top: 50%;
+    left: 40%;
     font-size: 1.5vw;
-    width: 50%;
-    
+    width: 50%; 
+}
+
+.social li {
+    display: inline-block;
+    padding: 10%;
+    padding-right: 25%;
+    margin-left: -20%;
+    position: relative;
+    font-size: 4vw;
+}
+
+.social a {
+    color: #fff;
 }
 
 /* .social {
