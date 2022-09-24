@@ -45,9 +45,13 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: white;
     color: #c2601a;
-  }
+}
 
-  textarea {
+textarea {
     height: 200px;
-  }
-  
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+}
