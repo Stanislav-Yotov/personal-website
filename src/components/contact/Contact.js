@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
 
-function Contact(props) {
+function Contact() {
 
     const [field, setField] = useState();
     const form = useRef();
@@ -14,7 +14,7 @@ function Contact(props) {
     function formSubmissionHandler(e) {
         e.preventDefault();
 
-        emailjs.sendForm()
+        emailjs.sendForm('service_3jmk1vp', 'template_gu7923l', form.current, 'Vl-iOUeYduNbDYTy8')
             .then((result) => {
                 alert("Message Sent Successfully");
                 console.log(result.text);

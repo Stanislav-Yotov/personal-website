@@ -1,7 +1,7 @@
 import styles from './HomePage.module.css';
 import CV from '../../assets/Stanislav Yotov CV.pdf';
 
-function HomePage(props) {
+function HomePage() {
     return (
         <div className={styles.container}>
             <p className={styles.top}>Hi, my name is</p>

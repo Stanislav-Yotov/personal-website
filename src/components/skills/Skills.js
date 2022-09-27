@@ -6,7 +6,7 @@ import react from '../../assets/react.png';
 import node from '../../assets/node.png';
 import github from '../../assets/github.png';
 
-function Skills(props) {
+function Skills() {
     return (
         <div className={styles.container}>
             <div>

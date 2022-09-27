@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 
-function Navbar(props) {
+function Navbar() {
     const [clicked, setClicked] = useState(false);
 
     function isClicked() {

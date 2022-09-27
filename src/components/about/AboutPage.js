@@ -1,7 +1,7 @@
 import styles from './About.module.css';
 import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 
-function AboutPage(props) {
+function AboutPage() {
     return (
         <div className={styles.container}>
             <div className={styles.greet}>

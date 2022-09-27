@@ -1,66 +1,43 @@
 import styles from './Projects.module.css';
 import amaro from '../../assets/amaro.jpg';
-import { useState } from 'react';
+import weather from '../../assets/weather.jpg';
+import hunter from '../../assets/hunters.jpg';
 
-function Projects(props) {
-    const [clicked, setClicked] = useState('Show description');
-    const [show, setShow] = useState(true);
-
-    function clickHandler(e) {
-        let btn = e.target.value;
-        if (btn === 'Show description') {
-            setClicked('Hide description');
-            setShow(false);
-        } else {
-            setClicked('Show description');
-            setShow(true);
-        }
-    }
+function Projects() {
 
     return (
         <div className={styles.container}>
-            <div className={styles['work-cotnainer']}>
-                <div className={styles.projects}>
-                    <p>Check out my recent projects</p>
+            <div className={styles.card}>
+                <img src={amaro} alt='Amaro digital' />
+                <div className={styles.cardContainer} >
+                    <h4><b>Amaro Digital</b></h4>
+                    <p>Amaro is a digital PR agency I made with React js and bootstrap for my friend's newly opened bussines.</p>
+                    <a href='https://github.com/Stanislav-Yotov/amaro-digital' target='_blank' rel='noreferrer'>
+                        <button>View Code</button>
+                    </a>
                 </div>
-
-                <div className={styles.card}  >
-
-                    <div className={styles.cardItem} style={{ backgroundImage: `url(${amaro})` }}>
-                        <div className={show ? `${styles.frame}` : `${styles.frameShow}`}>
-                            <div className={styles.span}>
-                            <span>This is my first React JS Application.</span>
-                            </div>
-                            <div className={styles.underSpan}>
-                                <a href='https://github.com/Stanislav-Yotov/amaro-digital' target='_blank' rel='noreferrer'>
-                                    <button>View on Github</button>
-                                </a>
-                                <button value={clicked} onClick={clickHandler}>{clicked}</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className={styles.card}  >
-
-                    <div className={styles.cardItem} style={{ backgroundImage: `url(${amaro})` }}>
-                        <div className={show ? `${styles.frame}` : `${styles.frameShow}`}>
-                            <div className={styles.span}>
-                            <span>This is my first React JS Application.</span>
-                            </div>
-                            <div className={styles.underSpan}>
-                                <a href='https://github.com/Stanislav-Yotov/amaro-digital' target='_blank' rel='noreferrer'>
-                                    <button>View on Github</button>
-                                </a>
-                                <button value={clicked} onClick={clickHandler}>{clicked}</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
             </div>
+            <div className={styles.card}>
+                <img src={weather} alt='weather app'  id='weather'/>
+                <div className={styles.cardContainer} >
+                    <h4><b>Weather App</b></h4>
+                    <p>Simple weather app made with React js and API from  www.openweathermap.org</p>
+                    <a href='https://github.com/Stanislav-Yotov/weather-app' target='_blank' rel='noreferrer'>
+                        <button>View Code</button>
+                    </a>
+                </div>
+            </div>
+            <div className={styles.card}>
+                <img src={hunter} alt='Hunters zone' />
+                <div className={styles.cardContainer} >
+                    <h4><b>Hunters Zone</b></h4>
+                    <p>This is existing app, which is made on php and vanilla JS, which I made on React js</p>
+                    <a href='https://github.com/Stanislav-Yotov/hunters-zone' target='_blank' rel='noreferrer'>
+                        <button>View Code</button>
+                    </a>
+                </div>
+            </div>
+            
         </div>
     );
 }
